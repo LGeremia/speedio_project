@@ -47,6 +47,7 @@ def iterate_csv(index,collection)
       :data_situacao_especial=>row[29]
     }
     result = collection.insert_one(hash)
+    puts result
   end
 end
 
@@ -62,7 +63,7 @@ end
 
 def download_zip(collection)
   index = 0
-  while index <= 0 do
+  while index <= 9 do
     url = "http://200.152.38.155/CNPJ/K3241.K03200Y#{index}.D11211.ESTABELE.zip"
     File.open("./temp/#{index}.zip", "w+") do |file|
       file.write HTTParty.get(url).body
@@ -170,18 +171,21 @@ def create_active_xlsx(porcentage_active)
   end
 end
 
-download_zip(collection)
+def main(collection)
+  download_zip(collection)
 
-#calculated_cnae = calculate_cnae_principal_secundario(collection)
+  #calculated_cnae = calculate_cnae_principal_secundario(collection)
 
-#calculated_restaurants = calculate_restaurants_openings_by_year(collection)
+  #calculated_restaurants = calculate_restaurants_openings_by_year(collection)
 
-#porcentage_active = calculate_active_percentage(collection)
+  #porcentage_active = calculate_active_percentage(collection)
 
 
-#create_active_xlsx(porcentage_active)
+  #create_active_xlsx(porcentage_active)
 
-#create_restaurants_xlsx(calculated_restaurants)
+  #create_restaurants_xlsx(calculated_restaurants)
 
-#create_cnae_xlsx(calculated_cnae)
+  #create_cnae_xlsx(calculated_cnae)
+end
 
+main(collection)
