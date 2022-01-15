@@ -64,6 +64,6 @@ Por fim vem a chamada de cada método para que ocorra tudo em ordem como um scri
 
 ## próximos passos
 
-[ ] Refatorar e melhorar o código já existente;
-[ ] Encontrar melhores formas de resolver o problema;
+[ ] Refatorar e melhorar o código já existente;<br>
+[ ] Encontrar melhores formas de resolver o problema;<br>
 [ ] Resolver problema de salvar CNAE secundários vazios 
