@@ -174,18 +174,18 @@ end
 def main(collection)
   download_zip(collection)
 
-  #calculated_cnae = calculate_cnae_principal_secundario(collection)
+  calculated_cnae = calculate_cnae_principal_secundario(collection)
 
-  #calculated_restaurants = calculate_restaurants_openings_by_year(collection)
+  calculated_restaurants = calculate_restaurants_openings_by_year(collection)
 
-  #porcentage_active = calculate_active_percentage(collection)
+  porcentage_active = calculate_active_percentage(collection)
 
 
-  #create_active_xlsx(porcentage_active)
+  create_active_xlsx(porcentage_active)
 
-  #create_restaurants_xlsx(calculated_restaurants)
+  create_restaurants_xlsx(calculated_restaurants)
 
-  #create_cnae_xlsx(calculated_cnae)
+  create_cnae_xlsx(calculated_cnae)
 end
 
 main(collection)
