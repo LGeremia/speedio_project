@@ -6,13 +6,13 @@ Criado com Ruby, utilizando funções para realizar as tarefas necessárias, pod
 
 ## Por que Ruby?
 
-Estou mais acostumado e confortável em trabalhar com Python, porém quando apareceu o Bônus Points por usar Ruby, pensei: "Por que não usar Ruby? O não já tenho, então vamos tornar isso mais emocionante!" e dessa forma fui atrás de ver como Ruby é utilizado nessas situaçẽos e como é sua sintaxe para o projeto.
+Estou mais acostumado e confortável em trabalhar com Python, porém quando apareceu o Bônus Points por usar Ruby, pensei: "Por que não usar Ruby? O não já tenho, então vamos tornar isso mais emocionante!" e dessa forma fui atrás de ver como Ruby é utilizado nessas situações e como é sua sintaxe para o projeto.
 
 ## use ruby index.rb para iniciar o processo
 
-## Fluxo do Script
+# Fluxo do Script
 
-Script começa importando os módulos e depois inicia a conexão com o MongoDB, utilizando .env para proteger as credenciais de acesso. Após termos a conexão, é criado uma única collection que será utilizada pelo script e depois passa para a declaração das funções onde explico abaixo.
+Script começa importando os módulos e depois inicia a conexão com o MongoDB, utilizando o .env para proteger as credenciais de acesso. Após termos a conexão, é criado uma única collection que será utilizada pelo script e depois passa para a declaração das funções onde explico abaixo.
 
 ## def download_zip(collection)
 
@@ -44,7 +44,7 @@ Terceira e última função de cálculo, que foi difícil até descobrir a funç
 
 ## def create_cnae_xlsx(calculated_cnae)
 
-Primeira geração de XLSX, responsável por pegar o retorno da furnção calculate_cnae_principal_secundario e então ir salvando em cada linha as informações dentro do objeto fazendo uma dupla iteração do cnae principal e secundário, pois em cada principal há vários secundários. Ela possui um valor variável de colunas pois cada CNAE Principal pode variar a quantidade de CNAE Secundário.
+Primeira geração de XLSX, responsável por pegar o retorno da furnção calculate_cnae_principal_secundario e então ir salvando em cada linha as informações dentro do objeto fazendo uma dupla iteração do CNAE principal e secundário, pois em cada principal há vários secundários. Ela possui um valor variável de colunas pois cada CNAE Principal pode variar a quantidade de CNAE Secundário.
 
 ## def create_restaurants_xlsx(calculated_restaurants)
 
