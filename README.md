@@ -1,4 +1,4 @@
-# Projeto SpeedIO
+# Projeto para limpeza e trabalho com grandes datasets do governo federal
 
 ### Projeto ainda em desenvolvimento
 
@@ -6,7 +6,7 @@ Criado com Ruby, utilizando funções para realizar as tarefas necessárias, pod
 
 ## Por que Ruby?
 
-Estou mais acostumado e confortável em trabalhar com Python, porém quando apareceu o Bônus Points por usar Ruby, pensei: "Por que não usar Ruby? O não já tenho, então vamos tornar isso mais emocionante!" e dessa forma fui atrás de ver como Ruby é utilizado nessas situações e como é sua sintaxe para o projeto.
+Estou mais acostumado e confortável em trabalhar com Python, porém queria conhecer melhor essa linguagem, dessa forma fui atrás de ver como Ruby é utilizado nessas situações e como é sua sintaxe para o projeto.
 
 ## use ruby index.rb para iniciar o processo
 
